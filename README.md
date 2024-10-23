@@ -30,10 +30,8 @@ your answer to this markdown file.
 
 I had the help of chat gpt with the conversion of making my program recursive instead of direct.
 
-A good invariant for recursive implemntation of the fib function would be to get the first few base cases being when n is 0 and when n is 1 ( you can also add if n is negative but thats more for just catching it before it happens). The first base cases you would have a good fibonacci sequence being [0] for 0 and [0,1] for 1.
+A good invariant for this implementation would be, the array returned by fib(n) has the first n + 1 fib numbers from F(0) to F(n) and for any i >= 2 because of the base cases, each element satisfies F(i) = F(i-2) + F(i-1).
 
-This says that the fib sequence is proporly implemented and is the correct start.
-
-Ive come to this conclusion because if we assume that the sequnece before n is correct than when the recursive sequence happens and you have n-1 we already know that before n the sequence is correct.
+My reasoning for my conclusion of this invariant being good is that it is independent of the code because it is a property of whats happening on the data itself not on the recursion or loops. Also it focusses on the previous being previous results being correct not how the algorithm was built or how data is stored/organized.
 
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
