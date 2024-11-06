@@ -30,7 +30,7 @@ your answer to this markdown file.
 
 I had the help of chat gpt with the conversion of making my program recursive instead of direct.
 
-A good invariant for this implementation would be, the array returned by fib(n) has the first n + 1 fib numbers from F(0) to F(n) and for any i >= 2 because of the base cases, each element satisfies F(i) = F(i-2) + F(i-1).
+A good invariant for this implementation would be showing that before Fib of n the correct n - 1 fib numbers are in the correct order.
 
 My reasoning for my conclusion of this invariant being good is that it is independent of the code because it is a property of whats happening on the data itself not on the recursion or loops. Also it focusses on the previous being previous results being correct not how the algorithm was built or how data is stored/organized.
 
